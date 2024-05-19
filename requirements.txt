@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+XlsxWriter
+pyxlsb
+yahooquery
+mplfinance
+matplotlib
+pytz
+DateTime
