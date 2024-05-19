@@ -201,13 +201,14 @@ def plot_candlestick(stock):
 
     return fig
 
+#['The current price change from 52wk high >= -15%.', price_change_52wk(stock)],
+
 def stock_selection(stock):
     ticker = Ticker(stock)
     
     data = np.array([['The last five quarterly EPS are all greater than expected.', eps_greater_than_expected(ticker)],
                     ['The past 50 days’ volume changing rate is between 0~3%.', past_50_days_volume_change(ticker)],
                     ['The stock price >= $12.', stock_price_greater_12(ticker)],
-                    ['The current price change from 52wk high >= -15%.', price_change_52wk(stock)],
                     ['The past 50 days avg volume >= 2000k. ', past_50_days_avg_volume(ticker)],
                     ['The current price > MA20.', cur_price_ma20(ticker)],
                     ['MA10 > MA50.', ma10_ma50(ticker)],
